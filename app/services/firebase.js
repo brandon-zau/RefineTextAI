@@ -15,6 +15,7 @@ import {
   FB_APP_ID
 } from '@env';
 
+
 const firebaseConfig = {
   apiKey: FB_API_KEY,
   authDomain: FB_AUTH_DOMAIN,

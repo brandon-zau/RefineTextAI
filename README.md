@@ -13,6 +13,7 @@ A cross-platform mobile application that uses AI to help users refine and person
 ## 📱 Demo
 
 ![RefineText Demo](docs/demo.gif)
+![Recording 2025-11-02 at 18 45 58](https://github.com/user-attachments/assets/10808963-0a79-432d-b04e-6ee86a9bc721)
 
 *[Add a GIF or video demo here showing the app in action]*
 

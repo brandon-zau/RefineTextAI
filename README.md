@@ -10,21 +10,11 @@ A cross-platform mobile application that uses AI to help users refine and person
 
 ---
 
-## 📱 Demo
+## Demo
 | Feature 1 | Feature 2 |
 |:---------:|:---------:|
 | <img src="app/assets/message.gif" width="400"/> | <img src="app/assets/login.gif" width="400"/> |
 | Login & Authentication | AI Message Refinement |
-
-
-### Screenshots
-
-<div align="center">
-  <img src="docs/screenshots/splash.png" width="200" alt="Splash Screen" />
-  <img src="docs/screenshots/home.png" width="200" alt="Home Screen" />
-  <img src="docs/screenshots/results.png" width="200" alt="Results Screen" />
-  <img src="docs/screenshots/history.png" width="200" alt="History Screen" />
-</div>
 
 ---
 
@@ -41,7 +31,7 @@ In today's digital age, effective communication is crucial across multiple conte
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 ### Core Functionality
 - **AI-Powered Refinement**: Leverages OpenAI's ChatGPT API to intelligently rewrite messages
@@ -59,7 +49,7 @@ In today's digital age, effective communication is crucial across multiple conte
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technology |
 |----------|-----------|
@@ -72,65 +62,13 @@ In today's digital age, effective communication is crucial across multiple conte
 
 ---
 
-## 🏗️ Architecture & User Flow
+## Architecture & User Flow
 
-### User Flow Diagram
+<div align="center">
+  <img src="github repo files/userflow_diagram.png" width="750" alt="UserFlow Diagram" />
+  <img src="github repo files/wireframe in figma.png" width="750" alt="Wireframe Figma" />
+</div>
 
-```
-┌─────────────┐
-│   Splash    │
-│   Screen    │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐
-│   Login/    │
-│   Signup    │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐      ┌──────────────┐      ┌──────────────┐
-│    Home     │─────▶│   Category   │─────▶│   Refined    │
-│   Screen    │      │  & Tone      │      │   Results    │
-└──────┬──────┘      │  Selection   │      └──────┬───────┘
-       │             └──────────────┘             │
-       │                                          │
-       │                                          ▼
-       │                                  ┌──────────────┐
-       │                                  │  Copy/Edit/  │
-       │                                  │    Save      │
-       │                                  └──────┬───────┘
-       │                                          │
-       ▼                                          │
-┌─────────────┐                                  │
-│   History   │◀─────────────────────────────────┘
-│   Screen    │
-└──────┬──────┘
-       │
-       ▼
-┌─────────────┐
-│   Profile   │
-│  & Settings │
-└─────────────┘
-```
-
-### Data Flow
-
-```
-User Input ──▶ Category Selection ──▶ Tone Selection ──▶ ChatGPT API
-                                                              │
-                                                              ▼
-                                                      AI-Generated Versions
-                                                              │
-                                                              ▼
-                                                        Display Results
-                                                              │
-                                                              ▼
-                                                        Save to Firestore
-                                                              │
-                                                              ▼
-                                                      Show in History
-```
 
 ## Getting Started
 
@@ -162,12 +100,12 @@ User Input ──▶ Category Selection ──▶ Tone Selection ──▶ ChatG
    Create a `.env` file in the root directory:
    ```env
    OPENAI_API_KEY=your_openai_api_key
-   FIREBASE_API_KEY=your_firebase_api_key
-   FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-   FIREBASE_PROJECT_ID=your_firebase_project_id
-   FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
-   FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
-   FIREBASE_APP_ID=your_firebase_app_id
+   FB_API_KEY=your_firebase_api_key
+   FB_AUTH_DOMAIN=your_firebase_auth_domain
+   FB_PROJECT_ID=your_firebase_project_id
+   FB_STORAGE_BUCKET=your_firebase_storage_bucket
+   FB_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+   FB_APP_ID=your_firebase_app_id
    ```
 
 4. **Run the app**

@@ -13,7 +13,7 @@ A cross-platform mobile application that uses AI to help users refine and person
 ## 📱 Demo
 | Feature 1 | Feature 2 |
 |:---------:|:---------:|
-| <img src="login.gif" width="400"/> | <img src="message.gif" width="400"/> |
+| <img src="app/assets/login.gif" width="400"/> | <img src="app/assets/message.gif" width="400"/> |
 | Login & Authentication | AI Message Refinement |
 
 
